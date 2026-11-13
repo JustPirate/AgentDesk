@@ -207,7 +207,7 @@ agentdesk
 Once a matching prebuilt GitHub Release is published, copy and run this one command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vijaygovindBiju/AgentDesk/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JustPirate/AgentDesk/master/install.sh | bash
 ```
 
 The installer is designed to detect Linux and CPU architecture, download the matching prebuilt AgentDesk daemon, verify its SHA-256 checksum, install it for the current user, configure a systemd user service, start the service, and verify that it is running. It does not compile AgentDesk locally.
@@ -228,7 +228,7 @@ See [Prebuilt Linux Installer](#prebuilt-linux-installer) and [Release Artifacts
 
 Download and install the prebuilt Android client directly:
 - **Direct Repository Download**: [AgentDesk-v0.2.0.apk](AgentDesk-v0.2.0.apk) (ARM64, Android 8.0+)
-- **GitHub Release Page**: [AgentDesk Releases (v0.2.0)](https://github.com/vijaygovindBiju/AgentDesk/releases/tag/v0.2.0)
+- **GitHub Release Page**: [AgentDesk Releases (v0.2.0)](https://github.com/JustPirate/AgentDesk/releases/tag/v0.2.0)
 
 A normal user does **not** need to install Flutter, Android SDK tools, ADB, Gradle, or compile source code to obtain the phone application. Simply transfer or open the APK on your Android device and install it.
 
@@ -640,7 +640,7 @@ Do not use `--insecure-dev` for production deployment. It enables plaintext `ws:
 #### 1. Clone the repository
 
 ```sh
-git clone https://github.com/vijaygovindBiju/AgentDesk.git
+git clone https://github.com/JustPirate/AgentDesk.git
 cd AgentDesk
 ```
 
@@ -850,13 +850,13 @@ ADB, Git, Java/JDK, Node/npm, or source code.
 Once a matching GitHub Release has been published, a normal Linux user will use:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vijaygovindBiju/AgentDesk/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JustPirate/AgentDesk/master/install.sh | bash
 ```
 
 To install a specific release:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vijaygovindBiju/AgentDesk/master/install.sh \
+curl -fsSL https://raw.githubusercontent.com/JustPirate/AgentDesk/master/install.sh \
   | VERSION=v0.2.0 bash
 ```
 
@@ -904,14 +904,14 @@ journalctl --user -u agentdesk.service -f
 To remove a user-scoped installation without deleting credentials:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vijaygovindBiju/AgentDesk/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JustPirate/AgentDesk/main/uninstall.sh | bash
 ```
 
 Set `PURGE_CONFIG=1` only when you also want to delete the local AgentDesk token
 and TLS certificate:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/vijaygovindBiju/AgentDesk/main/uninstall.sh \
+curl -fsSL https://raw.githubusercontent.com/JustPirate/AgentDesk/main/uninstall.sh \
   | PURGE_CONFIG=1 bash
 ```
 
@@ -932,7 +932,7 @@ SHA256SUMS
 ```
 
 The Linux archives contain the prebuilt `agentdesk` executable. The Android APK
-([`AgentDesk-v0.2.0.apk`](AgentDesk-v0.2.0.apk)) is installed directly by the user on phone hardware without requiring Flutter, Gradle, Android SDK tools, or ADB. Public release artifacts are also published on [GitHub Releases](https://github.com/vijaygovindBiju/AgentDesk/releases).
+([`AgentDesk-v0.2.0.apk`](AgentDesk-v0.2.0.apk)) is installed directly by the user on phone hardware without requiring Flutter, Gradle, Android SDK tools, or ADB. Public release artifacts are also published on [GitHub Releases](https://github.com/JustPirate/AgentDesk/releases).
 
 ## Running the Simulator
 
